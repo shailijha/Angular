@@ -1,8 +1,8 @@
 <div class="row">
     <div class="col-xs-12">
-        <input type="text" class="form-control" (input)="updateServer($event)">
+        <!-- <input type="text" class="form-control" (input)="updateServer($event)"> -->
         <input type="text" class="form-control" [(ngModel)]="serverName">
-        <p>{{ serverName }}</p>
+        <!-- <p>{{ serverName }}</p> -->
         <button class="btn btn-primary" [disabled]="!bool" (click)="createServer()">Add Server</button>
     </div>
 </div>

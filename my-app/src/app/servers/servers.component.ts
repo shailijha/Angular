@@ -21,10 +21,10 @@ export class ServersComponent implements OnInit {
   }
 
   createServer() {
-    this.serverCreationStatus = 'Server created';
+    this.serverCreationStatus = 'Server created. Name is ' +this.serverName;
   }
 
-  updateServer(event) {
-    this.serverName = event.target.value; 
-  }
+  // updateServer(event) {
+  //   this.serverName = event.target.value; 
+  // }
 }
