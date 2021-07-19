@@ -4,14 +4,19 @@ import { Component } from "@angular/core";
 @Component({
     selector: 'server',
     templateUrl: './server.component.html',
-    styles: [`
-        p {
-            background-color:black;
-            color:white;
-        }
-    `]
+    styles: [
+        `
+            .online {
+                color: white;
+            }
+        `
+    ]
 })
 export class ServerComponent {
     id: number = 30;
-    status: string = 'online';
+    status: string = Math.random() > 0.5 ? 'online' : 'offline';
+
+    getColor() {
+        return this.status === 'online' ? 'green' : 'red';
+    }
 }   
