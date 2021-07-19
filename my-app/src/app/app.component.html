@@ -28,3 +28,17 @@
         </div>
     </div>
 </div>
+<hr>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <button class="btn btn-primary" (click)="btnClick()">Display Details</button>
+            <p *ngIf="bool">Secret password is jha</p>
+            <p 
+                *ngFor="let click of clicks"
+                [ngStyle]="{backgroundColor: click >= 5 ? 'blue' : 'transparent'}"
+                [ngClass]="{white: click >= 5}"
+            >{{ click }}</p>
+        </div>
+    </div>
+</div>
