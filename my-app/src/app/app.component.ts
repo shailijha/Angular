@@ -24,6 +24,6 @@ export class AppComponent {
 
   applyBg(idx) {
     console.log(idx);
-    return idx >= 4 ? 'blue' : 'white';
+    return idx >= 4 ? 'blue' : 'transparent';
   }
 }
