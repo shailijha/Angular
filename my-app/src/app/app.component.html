@@ -35,8 +35,8 @@
             <button class="btn btn-primary" (click)="btnClick()">Display Details</button>
             <p *ngIf="bool">Secret password is jha</p>
             <p 
-                *ngFor="let click of clicks"
-                [ngStyle]="{backgroundColor: click >= 5 ? 'blue' : 'transparent'}"
+                *ngFor="let click of clicks;let i = index"
+                [ngStyle]="{backgroundColor: applyBg(i)}"
                 [ngClass]="{white: click >= 5}"
             >{{ click }}</p>
         </div>
